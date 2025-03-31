@@ -21,7 +21,7 @@ app.post("/send-email", async (req, res) => {
   const { username, phoneNumber, address, pieces, paymentMethod, cardDetails } = req.body;
 
   const mailOptions = {
-    from: process.env.EMAIL, // Your Gmail address
+    from: 'gobyg034@gmail.com', // Your Gmail address
     to: "gobyshanth@iykons.com", // Recipient email
     subject: "PIXGEO New Order Details",
     text: `
